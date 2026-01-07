@@ -11,17 +11,17 @@ public interface WebConfig extends Config {
     String browserName();
 
     @Key("browser.version")
-    @DefaultValue("128")
     String browserVersion();
 
     @Key("baseUrl")
-    @DefaultValue("https://google.com")
+    @DefaultValue("https://alfabank.ru")
     String baseUrl();
 
     @Key("remote.url")
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String remoteUrl();
 
-    @Key("is.remote")
-    @DefaultValue("false")
+    @Key("isRemote")
     boolean isRemote();
+
 }
