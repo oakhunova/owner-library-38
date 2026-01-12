@@ -18,10 +18,10 @@ public interface WebConfig extends Config {
     String baseUrl();
 
     @Key("remote.url")
-    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String remoteUrl();
 
     @Key("isRemote")
+    @DefaultValue("false")
     boolean isRemote();
 
 }
