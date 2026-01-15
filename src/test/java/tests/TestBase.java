@@ -25,12 +25,14 @@ public class TestBase {
             Configuration.remote = config.remoteUrl();
         }
     }
-        @BeforeEach
-        void openBrowser() {
+
+    @BeforeEach
+    void openBrowser() {
         open("/");
     }
+
     @AfterEach
     void tearDown() {
-    Selenide.closeWebDriver();
+        Selenide.closeWebDriver();
     }
 }
